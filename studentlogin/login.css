@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("daniel-leone-v7daTKlZzaw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(8px);
+    z-index: -1; 
+}
+.wrapper{
+    width: 500px;
+    height: 713px;
+    background-color:#696969;
+}
+.wrapper .formbox-login{
+    position: absolute;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 40px;
+    left: 0;
+}
+.formbox-login h3{
+    font-size: 32px;
+    color:  #7CFC00;
+    text-align: center;
+}
+.formbox-login .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #7CFC00;
+    font-size: 16px;
+    color: #7CFC00;
+    font-weight: 500;
+    transition: .5s;
+}
+.submit{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid  #7CFC00;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+.linkcss a{
+    color:  #7CFC00;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logword h2{
+    font-size: 80px;
+    font-family:'Times New Roman', Times, serif;
+    color:  #7CFC00;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 400;
+    text-align: center;
+}
+.logword h3{
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    color:  #7CFC00;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 400;
+    text-align: center;
+}
+.logword{ 
+    float: right;
+    width: 300px;
+    height: 400px;
+    margin-right: 350px;
+    margin-top: 150px;
+}
